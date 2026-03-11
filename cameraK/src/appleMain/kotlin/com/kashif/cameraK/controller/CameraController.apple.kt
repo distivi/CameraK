@@ -176,9 +176,11 @@ actual class CameraController(
                 platform.Foundation.NSLog("CameraK Error: movie output - ${e.message}")
             }
 
+            /* HOTFIX: to https://github.com/Kashif-E/CameraK/issues/108
+            We remove audio input during default photo-camera setup
             // Pre-add audio input so recording starts without session reconfiguration stutter
             addAudioInputIfNeeded()
-
+            */
             startSession()
         }
 
