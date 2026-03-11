@@ -1,4 +1,4 @@
 jdk:                                                                                                                                                                                                                                   
     - openjdk21
   install:
-    - ./gradlew :cameraK:publishToMavenLocal -x signAllPublications
+    - ./gradlew :cameraK:publishToMavenLocal -x signKotlinMultiplatformPublication -x signAndroidReleasePublication -x signIosArm64Publication -x signIosSimulatorArm64Publication -x signIosX64Publication -x signJvmPublication
